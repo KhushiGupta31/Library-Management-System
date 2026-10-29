@@ -9,6 +9,11 @@ DB_NAME = "library.db"
 def connect_db():
     return sqlite3.connect(DB_NAME)
 
+def sum(a,b):
+    return a+b
+
+print(sum(3,2))
+    
 
 def setup_database():
     with connect_db() as conn:
